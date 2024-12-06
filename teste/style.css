@@ -1,0 +1,50 @@
+/* Definindo o fundo preto para a página */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Container para agrupar o coração, título e a mensagem */
+.container {
+    text-align: center;
+}
+
+/* Estilo do título (na parte superior da tela) */
+.titulo {
+    font-size: 40px;
+    margin-bottom: 20px; /* Espaço entre o título e o coração */
+    font-weight: bold;
+}
+
+/* Estilo do coração com animação de pulsação */
+.coracao {
+    font-size: 250px;
+    animation: pulsar 1.5s infinite;
+}
+
+/* Animação para o efeito de pulsação do coração */
+@keyframes pulsar {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2); /* Aumenta o tamanho do coração */
+    }
+    100% {
+        transform: scale(1); /* Volta ao tamanho normal */
+    }
+}
+
+/* Estilo da frase abaixo do coração */
+.mensagem {
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
